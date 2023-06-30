@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricord",
+  "version": "${version}",
+  "name": "FabriCord",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/InTheRiches/FabriCord"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/FabriCord/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "net.riches.fabricord.client.FabriCordClient"
+    ],
+    "main": [
+      "net.riches.fabricord.FabriCord"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "mixins": [
+    "fabricord.mixins.json"
+  ]
+}
