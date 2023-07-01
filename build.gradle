@@ -34,6 +34,7 @@ dependencies {
     include "com.squareup.okhttp3:okhttp:3.13.0"
     include "com.squareup.okio:okio:1.17.2"
     include "com.neovisionaries:nv-websocket-client:2.14"
+
     include "org.spongepowered:configurate-yaml:4.0.0"
     include "org.spongepowered:configurate-core:4.0.0"
 

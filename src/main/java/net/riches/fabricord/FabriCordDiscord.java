@@ -15,6 +15,7 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.riches.fabricord.listeners.MessageListener;
+import net.riches.fabricord.util.FabriCordConfig;
 import org.jetbrains.annotations.NotNull;
 import org.apache.commons.codec.binary.Base64;
 
@@ -37,7 +38,7 @@ public class FabriCordDiscord implements EventListener {
 
     public FabriCordDiscord() {
         System.out.println("Discord Client initialized");
-        JDABuilder builder = JDABuilder.createDefault("MTEyMjkwNzAyNDk1NTU0MzYzMw.GXgk0k.AXMSZB0hH6zZAucfBhetxtp7rcMLufRqWRcwsA");
+        JDABuilder builder = JDABuilder.createDefault(FabriCordConfig.token);
 
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
         builder.setBulkDeleteSplittingEnabled(true);

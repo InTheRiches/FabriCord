@@ -23,6 +23,8 @@ public class FabriCord implements ModInitializer {
     public void onInitialize() {
         instance = this;
 
+        FabriCordConfig.loadConfig();
+
         this.discordClient = new FabriCordDiscord();
 
         new ChatEventListener();
@@ -34,6 +36,8 @@ public class FabriCord implements ModInitializer {
 
     private void serverStopping(MinecraftServer minecraftServer) {
         this.getDiscordClient().shutdown();
+
+        FabriCordConfig.saveConfig();
     }
 
     public FabriCordDiscord getDiscordClient() {
