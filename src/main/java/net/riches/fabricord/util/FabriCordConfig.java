@@ -2,7 +2,6 @@ package net.riches.fabricord.util;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import org.spongepowered.
 
 /**
  * @author Projekt Valor
